@@ -11,11 +11,11 @@
 
         // Set custom taxonomy(s)
         $steden = new Super_Custom_Taxonomy( 'stad', 'Stad', 'Steden', 'category' );
-        $straten = new Super_Custom_Taxonomy( 'straat', 'Straat', 'Straten', 'category' );
+        $wijken = new Super_Custom_Taxonomy( 'wijk', 'Wijk', 'Wijken', 'category' );
         $tags = new Super_Custom_Taxonomy( 'tag', 'Tag', 'Tags' );
         
         // Connect taxonomy met custom post type(s)
-        connect_types_and_taxes( $huizen, array($steden, $straten, $tags) );
+        connect_types_and_taxes( $huizen, array($steden, $wijken, $tags) );
 
         // Set custom icon(s)
         $huizen->set_icon( 'home' );
